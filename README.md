@@ -112,7 +112,6 @@ simplify tasks like keeping track of resident information, managing staff detail
 <img width="1064" height="629" alt="image" src="https://github.com/user-attachments/assets/e53ddca8-d59c-4bcd-b642-726997c8b8f5" />
 <img width="1056" height="634" alt="image" src="https://github.com/user-attachments/assets/78bb3809-4601-426a-b382-47edf259b623" />
 <img width="1056" height="637" alt="image" src="https://github.com/user-attachments/assets/aca41e84-49be-4538-a38a-cfafc16bd783" />
-<img width="1056" height="628" alt="image" src="https://github.com/user-attachments/assets/e6a195b5-292c-4227-939e-467623ece0df" />
 <img width="1056" height="628" alt="image" src="https://github.com/user-attachments/assets/5d55b43a-8ac0-4213-9e59-0e557b8b3f9f" />
 <img width="1056" height="636" alt="image" src="https://github.com/user-attachments/assets/5d05d195-caf1-42c3-af22-6c72f63e9bd1" />
 <img width="1056" height="639" alt="image" src="https://github.com/user-attachments/assets/f5fc8655-f096-4ed0-8c6f-b821563ef877" />
