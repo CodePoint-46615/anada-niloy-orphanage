@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3130A0DF-F5AD-4A2C-82E3-B1A1B04DA975}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OrphanageManagementSystem</RootNamespace>
+    <AssemblyName>OrphanageManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Change_Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Role.Designer.cs">
+      <DependentUpon>Change_Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donor.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Expense.cs" />
+    <Compile Include="MyConnection.cs" />
+    <Compile Include="OrphanageManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrphanageManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrphanManage.cs" />
+    <Compile Include="StringConnection.cs" />
+    <Compile Include="Register.cs" />
+    <Compile Include="FinancialManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialManagement.Designer.cs">
+      <DependentUpon>FinancialManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Orphan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Orphan.Designer.cs">
+      <DependentUpon>Manage Orphan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Employee.Designer.cs">
+      <DependentUpon>Manage_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlA.Designer.cs">
+      <DependentUpon>UserControlA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlB.Designer.cs">
+      <DependentUpon>UserControlB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlC.Designer.cs">
+      <DependentUpon>UserControlC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProfile.Designer.cs">
+      <DependentUpon>ViewProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Change_Role.resx">
+      <DependentUpon>Change_Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialManagement.resx">
+      <DependentUpon>FinancialManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Orphan.resx">
+      <DependentUpon>Manage Orphan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Employee.resx">
+      <DependentUpon>Manage_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControlA.resx">
+      <DependentUpon>UserControlA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlB.resx">
+      <DependentUpon>UserControlB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlC.resx">
+      <DependentUpon>UserControlC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProfile.resx">
+      <DependentUpon>ViewProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OrphanageManagementSystemDataSet.xsc">
+      <DependentUpon>OrphanageManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OrphanageManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrphanageManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrphanageManagementSystemDataSet.xss">
+      <DependentUpon>OrphanageManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F1P5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlogP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonLogSP2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gui_view_show_icon_158342.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38488.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
